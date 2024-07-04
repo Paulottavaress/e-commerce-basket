@@ -28,8 +28,8 @@
 </template>
 
 <script>
-  // APIs
-  import ProductsAPI from '@/APIs/ProductsAPI';
+  // Services
+  import { ProductsService } from '@/services';
 
   // Components
   import BasicCard from '@/components/shared/BasicCard.vue';
@@ -71,7 +71,7 @@
         try {
           this.isLoading = true;
 
-          const res = await ProductsAPI.getProducts();
+          const res = await ProductsService.fetchAllProducts();
 
           this.products = res.data;
         } catch (e) {

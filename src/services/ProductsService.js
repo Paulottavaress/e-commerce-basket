@@ -1,4 +1,7 @@
+// APIs
 import { ProductsAPI } from '@/APIs';
+
+// Handlers
 import { displayErr } from '@/handlers/NotificationsHandler';
 
 export default {

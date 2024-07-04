@@ -5,16 +5,18 @@ import users from '@/data/users.json';
 import Sleep from '@/helpers/Sleep';
 
 export default {
-	getOneUser: async id => {
+	getOneUser: async (email, password) => {
 		try {
 			await Sleep();
-			const data = users.find(user => user.id === id);
+			const data = users.find(
+				user => user.email === email && user.password === password
+			);
 
 			const res = {
-				data,
+				data: data || [],
 				request: {
 					// TO-DO: CREATE A HELPER THAT CYCLES THE ERROR MESSAGE
-					status: 200
+					status: data ? 200 : 422
 				}
 			};
 

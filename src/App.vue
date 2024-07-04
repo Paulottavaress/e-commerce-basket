@@ -1,5 +1,6 @@
 <template>
   <v-layout>
+    <left-drawer />
     <v-main>
       <v-container>
         <router-view />
@@ -23,17 +24,18 @@
   import 'vuetify-sonner/style.css';
   
   // Components
+  import LeftDrawer from './components/shared/LeftDrawer.vue'
   import LoadingOverlay from '@/components/shared/LoadingOverlay.vue'
 
   export default {
     components: {
-      // LeftDrawer,
+      LeftDrawer,
       VSonner,
       LoadingOverlay
     },
     computed: {
       ...mapState(AppStore, ['isLoading']),
-    }
+    },
   }
 </script>
 

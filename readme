@@ -1,1 +1,8 @@
+Instructions:
+
+Check the users.json file to get valid access credentials.
+
+Notes:
+
 The .env.local file is beeing pushed to the remote repository because this is not a production project.
+The data folder mocks the DB tables, where passwords should be encrypted. For simplicity sake, I have not encrypted the passwords as this is not a production project.

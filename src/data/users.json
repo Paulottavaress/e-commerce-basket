@@ -1,7 +1,10 @@
 [
 	{
 		"id": "a9386531-3bc4-4a19-b5c7-7f3e1748f2ef",
-		"name": "Paulo Andrade",
+		"first_name": "Paulo",
+		"last_name": "Andrade",
+		"email": "ph.and@hotmail.com",
+		"password": "test123",
 		"basket": [
 			{
 				"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
@@ -15,7 +18,10 @@
 	},
 	{
 		"id": "9c8ca01a-c591-4382-ae7f-e424cd1d7d0f",
-		"name": "Adam",
+		"first_name": "Adam",
+		"last_name": null,
+		"email": "adam@sonofatailor.com",
+		"password": "test321",
 		"basket": [
 			{
 				"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
