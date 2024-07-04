@@ -14,6 +14,10 @@
   // Router
   import { RouterView } from 'vue-router'
 
+  // Stores
+  import { mapState } from 'pinia';
+  import { AppStore } from '@/stores';
+
   // Libraries
   import { VSonner } from 'vuetify-sonner';
   import 'vuetify-sonner/style.css';
@@ -22,16 +26,14 @@
   import LoadingOverlay from '@/components/shared/LoadingOverlay.vue'
 
   export default {
-    data() {
-      return {
-        isLoading: false
-      }
-    },
     components: {
       // LeftDrawer,
       VSonner,
       LoadingOverlay
     },
+    computed: {
+      ...mapState(AppStore, ['isLoading']),
+    }
   }
 </script>
 

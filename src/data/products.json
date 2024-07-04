@@ -5,7 +5,8 @@
 		"price": 0.5,
 		"currency": "EUR",
 		"image": "https://www.collinsdictionary.com/images/full/pencil_280523090.jpg",
-		"amount_in_stock": 10
+		"amount_in_stock": 10,
+		"amount_unit": "unit"
 	},
 	{
 		"id": "17e4610e-a1e9-4544-b850-c32bfe1320a3",
@@ -13,7 +14,8 @@
 		"price": 2.0,
 		"currency": "USD",
 		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMi9-X1TYdbpst5TWv05EE672nZjMS1OrFFA&s",
-		"amount_in_stock": 1
+		"amount_in_stock": 1,
+		"amount_unit": "unit"
 	},
 	{
 		"id": "6948843b-6f82-47f5-b2ea-44aaac9236de",
@@ -21,6 +23,16 @@
 		"price": 5.0,
 		"currency": "EUR",
 		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aFlRXRiLN0OwZunCjiZLzg4Oj6hIxJhwSQ&s",
-		"amount_in_stock": 3
+		"amount_in_stock": 3,
+		"amount_unit": "unit"
+	},
+	{
+		"id": "555f8309-4089-4f9d-ad38-70174e8b8ea1",
+		"name": "Ink",
+		"price": 7.0,
+		"currency": "EUR",
+		"image": "https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2011/08/thumb_720_450_black-ink-spill_shutterstock_70536289.jpg",
+		"amount_in_stock": 50,
+		"amount_unit": "liter"
 	}
 ]
