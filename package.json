@@ -1,0 +1,37 @@
+{
+	"name": "e-commerce-basket",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"author": "Paulo Andrade",
+	"license": "UNLICENSED",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@vuelidate/core": "^2.0.3",
+		"@vuelidate/validators": "^2.0.4",
+		"animate.css": "^4.1.1",
+		"chart.js": "^4.4.2",
+		"lodash": "^4.17.21",
+		"pinia": "^2.1.7",
+		"pinia-plugin-persistedstate": "^3.2.1",
+		"uuid": "^9.0.1",
+		"vite-plugin-vuetify": "^2.0.3",
+		"vue": "^3.4.15",
+		"vue-chartjs": "^5.3.0",
+		"vue-router": "^4.2.5",
+		"vuetify": "^3.6.7",
+		"vuetify-sonner": "^0.3.19"
+	},
+	"devDependencies": {
+		"@mdi/font": "^7.4.47",
+		"@vitejs/plugin-vue": "^5.0.3",
+		"@vue/devtools": "^7.2.1",
+		"sass": "^1.77.2",
+		"vite": "^5.0.11",
+		"vite-plugin-vue-devtools": "^7.2.1"
+	}
+}
