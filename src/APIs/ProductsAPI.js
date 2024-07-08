@@ -2,16 +2,20 @@
 import products from '@/data/products.json';
 
 // Helpers
-import Sleep from '@/helpers/Sleep';
+import { cloneDeep } from 'lodash';
+
+// Store
+import { AppStore } from '@/stores';
 
 export default {
 	getProducts: async () => {
 		try {
-			await Sleep();
+			const prods = AppStore._pinia.state._value.app.products;
+			const data = cloneDeep(prods?.length ? prods : products);
+
 			const res = {
-				data: products,
+				data,
 				request: {
-					// TO-DO: CREATE A HELPER THAT CYCLES THE ERROR MESSAGE
 					status: 200
 				}
 			};

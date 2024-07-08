@@ -1,19 +1,35 @@
 // Data
 import shipping from '@/data/shipping.json';
-
-// Helpers
-import Sleep from '@/helpers/Sleep';
+import convertionRatio from '@/data/convertionRatio';
 
 export default {
 	getShipping: async totalItems => {
 		try {
-			await Sleep();
-			const data = shipping.find(sh => sh.max_items <= totalItems);
+			const data = shipping.filter(
+				sh =>
+					totalItems >= sh?.min_items &&
+					(!sh?.max_items || totalItems <= sh?.max_items)
+			);
+
+			const { EURUSD } = convertionRatio;
+
+			const shippingMethods = data.map(sm => {
+				const USDShippingPrice =
+					sm.currency === 'USD' ? sm.price : sm.price * EURUSD;
+
+				const EURShippingPrice =
+					sm.currency === 'EUR' ? sm.price : sm.price / EURUSD;
+
+				return {
+					...sm,
+					USDShippingPrice,
+					EURShippingPrice
+				};
+			});
 
 			const res = {
-				data,
+				data: shippingMethods,
 				request: {
-					// TO-DO: CREATE A HELPER THAT CYCLES THE ERROR MESSAGE
 					status: 200
 				}
 			};

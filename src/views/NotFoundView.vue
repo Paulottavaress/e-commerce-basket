@@ -7,8 +7,6 @@
       class="text-wrap"
       :to="redirectRoutePath"
       :text="redirectText"
-      to="/"
-      text="Click here to go back to the products page."
       append-icon="mdi-chevron-right"
       width="fit-content"
       size="large"
@@ -25,7 +23,7 @@
     computed: {
       ...mapState(AuthStore, ['isAuthenticated']),
       redirectText() {
-        return this.isAuthenticated ? 'Click here to go back to the products page' : 'Click here to login to your account.';
+        return this.isAuthenticated ? 'Click here to go back to the products page' : 'Click here to login to your account';
       },
       redirectRoutePath() {
         return this.isAuthenticated ? '/products-list' : '/login';

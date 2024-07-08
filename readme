@@ -1,8 +1,14 @@
 Instructions:
 
 Check the users.json file to get valid access credentials.
+Both users already have some items added to their carts. If you checkout, these items will be deducted from the stock.
+If you log out, and then log back in, the stock will be replenished.
+In the .env.local you are able to turn off the API delay, increase or reduce it, and control the odds of a nternal Server error.
 
 Notes:
 
 The .env.local file is beeing pushed to the remote repository because this is not a production project.
 The data folder mocks the DB tables, where passwords should be encrypted. For simplicity sake, I have not encrypted the passwords as this is not a production project.
+The data has not been normalized in the UsersAPI, as I picture this type of application in a non relational DB, such as MongoDB.
+I've added extras, like the login page, catch all page, and products list page. I've not implemented the recover password view/route and sign up view/route as well as the brute force login attempt prevention.
+The shipping method with the lowest price will set as the default and updated to whenever the selected shipping method becomes unavailable.

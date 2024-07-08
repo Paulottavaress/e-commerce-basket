@@ -5,16 +5,19 @@
 		"last_name": "Andrade",
 		"email": "ph.and@hotmail.com",
 		"password": "test123",
-		"basket": [
-			{
-				"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
-				"amount": 5
-			},
-			{
-				"id": "17e4610e-a1e9-4544-b850-c32bfe1320a3",
-				"amount": 1
-			}
-		]
+		"basket": {
+			"id": "429faff2-a5f7-43bb-9320-10247819d94f",
+			"products": [
+				{
+					"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
+					"amount": 5
+				},
+				{
+					"id": "17e4610e-a1e9-4544-b850-c32bfe1320a3",
+					"amount": 1
+				}
+			]
+		}
 	},
 	{
 		"id": "9c8ca01a-c591-4382-ae7f-e424cd1d7d0f",
@@ -22,15 +25,18 @@
 		"last_name": null,
 		"email": "adam@sonofatailor.com",
 		"password": "test321",
-		"basket": [
-			{
-				"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
-				"amount": 5
-			},
-			{
-				"id": "6948843b-6f82-47f5-b2ea-44aaac9236de",
-				"amount": 3
-			}
-		]
+		"basket": {
+			"id": "017b8425-b5b8-4861-9d7d-bf1265d76ff1",
+			"products": [
+				{
+					"id": "592afb86-f00f-41ff-a9fd-0542fdbe524c",
+					"amount": 5
+				},
+				{
+					"id": "6948843b-6f82-47f5-b2ea-44aaac9236de",
+					"amount": 3
+				}
+			]
+		}
 	}
 ]

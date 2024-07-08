@@ -21,7 +21,6 @@
             </v-avatar>
           </template>
         </v-list-item>
-        <!-- TO-DO: add a counter like v-badge -->
         <v-list-item v-if="isAuthenticated" to="cart" prepend-icon="mdi-cart-outline" title="Cart" :color="activeColor"></v-list-item>
         <v-divider></v-divider>
         <v-list-item to="products-list" prepend-icon="mdi-shopping-outline" title="Shop" :color="activeColor"></v-list-item>

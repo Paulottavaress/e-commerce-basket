@@ -30,6 +30,5 @@ export default defineStore('auth', {
 			return initals;
 		}
 	},
-	actions: {},
 	persist: true
 });
